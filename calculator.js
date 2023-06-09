@@ -1,17 +1,15 @@
-function display  (data){
-  document.getElementById("screen").value += data;
+function display(data){
+  document.getElementById('screen').value +=data;
   return data;
 }
 
 function solve(){
-
-    let  screen =  document.getElementById('screen').value;
-    let data = screen.value;
-    let result  =  eval(data);
-    screen.value = result;
-    return result ;
+  let screen = document.getElementById('screen');
+  let data = screen.value;
+  let result = eval(data);
+  screen.value= result;
 }
-
-function  clear() {
-  let screnn = documentgetElementById('screen');
+function clearScreen(){
+  let screen = document.getElementById('screen');
+  screen.value= "";
 }
