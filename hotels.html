@@ -14,7 +14,7 @@
         <script>
             var trumpHotel = new Hotel('Trump Tower', 50, 100 ,"https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=800");
             var dreamHotel = new Hotel("Dream", 250, 50,"https://images.pexels.com/photos/3124079/pexels-photo-3124079.jpeg?auto=compress&cs=tinysrgb&w=800"); 
-            var mariotHotel = new Hotel ("Mariot", 200, 100, "https://images.pexels.com/photos/1697076/pexels-photo-1697076.jpeg?auto=compress&cs=tinysrgb&w=800" ); 
+            var mariotHotel = new Hotel ("Mariot", 200, 100, "https://images.pexels.com/photos/1697076/pexels-photo-1697076.jpeg?auto=compress&cs=tinysrgb&w=800"); 
             var hotelsList = [trumpHotel, dreamHotel ,marioHotels];
             var content = document.getElementById("hotels");
 
@@ -24,7 +24,7 @@
              var node  = document.createElement("div");
              node.className = "card";
              node.style = "width: 18em";
-             node.innerHTML = " < img scr = " +  data.picture +"  > < div class= 'card-body'>"  + data.name+ " </div">
+             node.innerHTML = " < img scr = " +  data.picture + "  > < div class= 'card-body'>"  + data.name+ " </div">
              content.appendChild(node);
 
             })
